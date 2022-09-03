@@ -527,7 +527,7 @@ class ProductFaker
     /**
      * @return mixed
      */
-    public function randomProduct(): string
+    public function random(): string
     {
         $possibleItems = array_keys(self::$products);
         $key = array_rand($possibleItems);
