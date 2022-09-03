@@ -1,0 +1,45 @@
+{
+    "name": "codetechnl/codetechfaker",
+    "description": "CodeTech",
+    "keywords": [
+
+    ],
+    "license": "MIT",
+    "require": {
+        "php" : "^8.0|^8.1",
+        "illuminate/auth": "^7.0|^8.0|^9.0",
+        "illuminate/container": "^7.0|^8.0|^9.0",
+        "illuminate/contracts": "^7.0|^8.0|^9.0",
+        "illuminate/database": "^7.0|^8.0|^9.0",
+        "seoshop/seoshop-php": "^1.9"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0|^6.0|^7.0",
+        "phpunit/phpunit": "^9.4",
+        "predis/predis": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeTechNL\\Faker\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CodeTechNL\\Faker\\FakerServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
