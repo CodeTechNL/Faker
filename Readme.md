@@ -25,3 +25,8 @@ class ExampleClasss extends Factory
     }
 }
 ```
+
+# To-do
+ - [ ] Add installation guide
+ - [ ] Make tests
+ - [ ] Documentation how to add products
