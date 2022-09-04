@@ -1,17 +1,14 @@
 {
     "name": "codetechnl/codetechfaker",
-    "description": "CodeTech",
+    "description": "A faker package for custom attributes. Product faker, brand faker.",
     "keywords": [
 
     ],
     "license": "MIT",
     "require": {
-
-    },
-    "require-dev": {
         "fakerphp/faker": "^1.9"
     },
-    "autoload-dev": {
+    "autoload": {
         "psr-4": {
             "CodeTechNL\\Faker\\": "src"
         }
