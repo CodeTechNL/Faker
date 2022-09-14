@@ -3,6 +3,8 @@
 namespace CodeTechNL\Faker;
 
 use CodeTechNL\Faker\Fakers\CompanyFaker;
+use CodeTechNL\Faker\Fakers\CustomerFaker;
+use CodeTechNL\Faker\Fakers\OrderFaker;
 use CodeTechNL\Faker\Fakers\ProductFaker;
 
 /**
@@ -16,10 +18,11 @@ class FakerWrapper
     {
 
     }
+
     /**
      * @return CompanyFaker
      */
-    public function randomBrand() : CompanyFaker
+    public function randomBrand(): CompanyFaker
     {
         return new CompanyFaker();
     }
@@ -27,10 +30,24 @@ class FakerWrapper
     /**
      * @return ProductFaker
      */
-    public function product() : ProductFaker
+    public function product(): ProductFaker
     {
         return (new ProductFaker($this->faker));
     }
 
+    /**
+     * @return OrderFaker
+     */
+    public function order(): OrderFaker
+    {
+        return new OrderFaker($this->faker);
+    }
 
+    /**
+     * @return CustomerFaker
+     */
+    public function customer() : CustomerFaker
+    {
+        return new CustomerFaker($this->faker);
+    }
 }
